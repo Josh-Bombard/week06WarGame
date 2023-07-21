@@ -1,11 +1,7 @@
 //Create the game of war
-//Create a deck and give half of each deck to two players
+//Create a deck that is shuffled and give half of each deck to two players
 //have the two players compare cards and whoever has the highest gets a point
 //whoever has the most points at the end of the game wins 
-
-
-
-
 
 
 //create a make deck function that takes all the cards, makes a deck, and then shuffles them
@@ -25,7 +21,9 @@
   //   this.player1.hand = this.deck.splice(0,26);
   //   this.player2.hand = this.deck.splice(0,26);
   // }
-//create a function that starts the game and iterates through the 2 arrays to discern who has the higher valued vard 
+
+
+
 //---------------------------------------------------\\
 //create suits and values for the cards using arrays
 let deck = [];
@@ -61,7 +59,7 @@ class Player {
 
 
 
-//create a game class that creates the deck, shuffles the deck, distributes the deck, and starts the game of war
+//create a game class that creates the deck, shuffles the deck, distributes the deck, and starts the game of war and also has the function to end it
 
 
 class Game {
@@ -97,6 +95,11 @@ class Game {
       this.player2.hand = this.deck.splice(0,26);
     }
 
+
+//create a function that starts the game and iterates through the 2 arrays to discern who has the higher valued card
+
+//if one of the players has a higher card than the other give that player a point, if it is a draw give zero points.
+
   startGame() {
     for (let i = 0; i < this.player1.hand.length && this.player2.hand.length; i++){
       let roundCounter = this.round += 1;
@@ -119,6 +122,9 @@ class Game {
     
     }
   }
+
+  //create an end of the game function that adds up all of the points and declares who is the winner. showing the scoreboard and announcing the winner as well.
+
   endGame() {
     if (this.player1.point > this.player2.point){
       console.log(`PLAYER 1 WINS WITH ${this.player1.point} POINTS ! Sadly Player 2 only had ${this.player2.point}`);
