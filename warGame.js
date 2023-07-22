@@ -104,17 +104,14 @@ class Game {
     for (let i = 0; i < this.player1.hand.length && this.player2.hand.length; i++){
       let roundCounter = this.round += 1;
       console.log(`ROUND ${roundCounter}.... WAR!`);
-      console.log(`Player 1 has played ${this.player1.hand[i].value} of ${this.player1.hand[i].suit}`);
-      console.log(`Player 2 has played ${this.player2.hand[i].value} of ${this.player2.hand[i].suit}`);
+      console.log(`Player 1 laid ${this.player1.hand[i].value} of ${this.player1.hand[i].suit} and Player 2 laid ${this.player2.hand[i].value} of ${this.player2.hand[i].suit}`);
     if (this.player1.hand[i].value > this.player2.hand[i].value) {
-      console.log(`Player 1 has won the round`);
       let player1Total = this.player1.point += 1;
-      console.log(`Player 1's total points are now ${player1Total}`);
+      console.log(`Player 1 has won the round!! Player 1's total points are now ${player1Total}`);
       
     } else if (this.player1.hand[i].value < this.player2.hand[i].value) {
-      console.log(`Player 2 won the round`);
       let player2Total =this.player2.point += 1;
-      console.log(`Player 2's points are now ${player2Total}`);
+      console.log(`Player 2 won the round!! Player 2's points are now ${player2Total}`);
       
     } else {
       console.log(`Seems there was a tie... no points allocated to either`)
