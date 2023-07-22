@@ -131,7 +131,7 @@ class Game {
     } else if (this.player1.point < this.player2.point){
       console.log(`PLAYER 2 WINS WITH ${this.player2.point} POINTS ! Sadly Player 1 only had ${this.player1.point}`)
     } else {
-      console.log(`ITS A DRAW 😲 Both ended with same number of points !`);
+      console.log(`ITS A DRAW !!! Both ended with same number of points !`);
     }
   }
 }

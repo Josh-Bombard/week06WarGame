@@ -1,0 +1,26 @@
+{
+  "name": "wargameweek06",
+  "version": "1.0.0",
+  "description": "this is my war game for week 06 assignment",
+  "main": "warGame.js",
+  "scripts": {
+    "test": "war"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josh-Bombard/week06WarGame.git"
+  },
+  "keywords": [
+    "war"
+  ],
+  "author": "Josh Bombard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josh-Bombard/week06WarGame/issues"
+  },
+  "homepage": "https://github.com/Josh-Bombard/week06WarGame#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
